@@ -5,14 +5,10 @@
 
 using namespace std;
 
-struct Fecha{
-  int year;
-  int month;
-  int day;
-};
+int ClassNum(int n1, int n2, int n3);
 
 int main () {
-  map<Fecha, string> Info; 
+  map<string, string> Info; 
   string comandos;
   string prt1;
   string prt2;
@@ -25,24 +21,35 @@ int main () {
     if(iss >> prt1){
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
-      
-      }
+
+        }
       }else if(prt1 == "Del"){
         if(iss >> prt2){
           if(iss >> prt3){
-
+             
           }else{
 
           }
         }
       }else if(prt1 == "Find"){
         if(iss >> prt2){
-          
+
         }
       }else if(prt1 == "Print"){
-        
+
       }
     }
   }
   return 0;
+}
+
+int ClassNum(string yes){
+  stringstream ss(yes);
+  string temp;
+  getline(ss, temp, '-');
+  int Firstnum = stoi(temp);
+  getline(ss, temp, '-');
+  int Secondnum = stoi(temp);
+  getline(ss, temp, '-');
+  int Thirdnum = stoi(temp); 
 }
