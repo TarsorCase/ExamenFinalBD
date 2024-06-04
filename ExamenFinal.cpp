@@ -28,11 +28,19 @@ int main () {
       
       }
       }else if(prt1 == "Del"){
+        if(iss >> prt2){
+          if(iss >> prt3){
 
+          }else{
+
+          }
+        }
       }else if(prt1 == "Find"){
-
+        if(iss >> prt2){
+          
+        }
       }else if(prt1 == "Print"){
-
+        
       }
     }
   }
