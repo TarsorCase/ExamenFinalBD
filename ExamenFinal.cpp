@@ -1,3 +1,4 @@
+#include <cctype>
 #include <iostream>
 #include <map>
 #include <string>
@@ -25,7 +26,7 @@ int main () {
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
           if(fechas[1] > 0 && fechas[1] < 13){
-            if(fechas[1] > 0 && fechas[1] < 32){
+            if(fechas[2] > 0 && fechas[2] < 32){
               cout << fechas[0] << " " << fechas[1] << " " << fechas[2];
             }else{
               cout << "Day value is invalid: " << fechas[2];
@@ -41,11 +42,11 @@ int main () {
           if(iss >> prt3){
             ClassNum(prt2);
             if(fechas[1] > 0 && fechas[1] < 13){
-              if(fechas[1] > 0 && fechas[1] < 32){
+              if(fechas[2] > 0 && fechas[2] < 32){
                cout << fechas[0] << " " << fechas[1] << " " << fechas[2];
               }else{
                 cout << "Day value is invalid: " << fechas[2];
-               break;
+                break;
               }
             }else{
               cout << "Month value is invalid: " << fechas[1];
@@ -59,11 +60,7 @@ int main () {
               break;
             }
           }
-             
-          }else{
-
-          }
-        }
+        }    
       }else if(prt1 == "Find"){
         if(iss >> prt2){
 
@@ -78,15 +75,18 @@ int main () {
 
 void ClassNum(string yes){
   fechas.clear();
-  stringstream ss(yes);
-  string temp;
-  getline(ss, temp, '-');
-  int Firstnum = stoi(temp);
-  fechas.push_back(Firstnum);
-  getline(ss, temp, '-');
-  int Secondnum = stoi(temp);
-  fechas.push_back(Secondnum);
-  getline(ss, temp, '-');
-  int Thirdnum = stoi(temp); 
-  fechas.push_back(Thirdnum);
+  int size = yes.size();
+  string num;
+  for(int i = 0; i < size; ++i){
+    if(isdigit(yes[i])){
+      if(yes[i - 2] == '-' && yes[i - 1] == '-' && (i - 1) >= 1){
+        num += yes[i-1];
+        int iterador = i; 
+        while(yes[iterador] != '-'){
+          num += yes[iterador];
+          ++iterador;
+        }
+      }        
+    }
+  }
 }
