@@ -6,11 +6,14 @@
 </p>
 
 
-# Detalles
+# Proyecto de Modelo de Base de Datos Simple en C++
 
-Este proyecto consiste en el desarrollo de un modelo de base de datos simple en C++, diseñado para gestionar eventos y fechas de manera eficiente. A continuación, se detalla la estructura y funcionalidades del modelo:
+## El Problema
+El objetivo de este proyecto es desarrollar un modelo de base de datos simple en C++ para gestionar eventos y fechas de manera eficiente. Este modelo está diseñado para ser utilizado en aplicaciones que requieren una manera estructurada y eficiente de almacenar y acceder a eventos asociados con fechas específicas.
 
-## Funcionalidad de la calculadora
+## Comparativa y Justificación de Bases de Datos Existentes
+
+## Funcionalidades del Modelo de Base de Datos
 
 El modelo de base de datos simple ofrece las siguientes funciones de gestion: 
 
@@ -52,15 +55,26 @@ En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamien
 Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
 
 ## Contribution Guidelines
+Las contribuciones directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. Siéntanse libres de subir un pull request si desean contribuir.
 
-Las contribuciones directa al proyecto son de un equipo de trabajo del que soy parte, sin emebargo denotar el trabajo de enseñanza del profesor para lograr el proyecto. Sientase libres de subir un pull request si es que desean.
+## Creditos
+- **Nicole Lozada** - [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
+- **Gerard Gonzalez** - [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
+- **Docente** - Orientación y enseñanza
+
+## Herramientas Utilizadas
+- **C++**: Lenguaje de programación principal.
+- **g++**: Compilador utilizado para construir el proyecto.
+- **GitHub**: Plataforma para alojar el repositorio y facilitar la colaboración.
 
 ## Disclaimer
-
-Porfavor denotar que este repositorio es un proyecto para la universidad solamente. Los recursos aca, son totalemente utilizables para cualquier individuo interesado en como funciona el proyecto.
+Por favor, tener en cuenta que este repositorio es un proyecto universitario. Los recursos aquí disponibles son totalmente utilizables para cualquier individuo interesado en entender cómo funciona el proyecto.
 
 ## Contact
+Si tienes alguna pregunta, inquietud o comentario sobre este repositorio, por favor no dudes en comunicarte. Puedes contactarnos abriendo un problema o enviándonos un correo electrónico a:
 
-Si tienes alguna pregunta, inquietud o comentario sobre este repositorio, por favor no dudes en comunicarte. Puedes contactarme [abriendo un problema](https://github.com/TarsorCase/Cifrado-Cesar/issues) o enviándome un correo electrónico a [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo).
+- [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
+- [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
 
 Happy Coding! 🚀
+
