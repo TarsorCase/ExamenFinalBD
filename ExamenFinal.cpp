@@ -25,15 +25,16 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
+          cout << "\n" << fechas[0] << " " << fechas[1] << " " << fechas[2];
           if(fechas[1] > 0 && fechas[1] < 13){
             if(fechas[2] > 0 && fechas[2] < 32){
               cout << fechas[0] << " " << fechas[1] << " " << fechas[2];
             }else{
-              cout << "Day value is invalid: " << fechas[2];
+              cout << "\nDay value is invalid: " << fechas[2];
               break;
             }
           }else{
-            cout << "Month value is invalid: " << fechas[1];
+            cout << "\nMonth value is invalid: " << fechas[1];
             break;
           }
         }
@@ -80,11 +81,11 @@ void ClassNum(string yes){
   string num;
   for(int i = 0; i < size; ++i){
     if(isdigit(yes[i])){
-      if(yes[i-1] == '-'){
+      if(i > 0 && yes[i-1] == '-'){
         if(i == 1){
           num += yes[i-1];
-          if(yes[i - 3] == '-' && (i - 3) >= 0){
-            cout << "Doble guion error";
+          if(i>= 3 && yes[i - 3] == '-' && yes[i - 2] == '-'){
+            cout << "Doble guion error\n";
             break;
           }
           for(int j = i; j < size; ++j){
@@ -95,12 +96,13 @@ void ClassNum(string yes){
             }
           }
         fechas.push_back(stoi(num));
+        num.clear();
         }else{
-          if(yes[i - 3] == '-' && (i - 3) >= 0){
+          if(i >= 3 && yes[i - 3] == '-' && yes[i-2] == '-'){
             cout << "Doble guion error";
             break;
           }
-          if(yes[i - 2] == '-' && (i - 2) >= 0){
+          if(i >= 2 && yes[i - 2] == '-'){
             num += yes[i-1];  
           }
           for(int j = i; j < size; ++j){
@@ -111,6 +113,7 @@ void ClassNum(string yes){
             }
           }
         fechas.push_back(stoi(num));
+        num.clear();
         }
       }else{
         for(int j = i; j < size; ++j){
@@ -121,6 +124,7 @@ void ClassNum(string yes){
           }
         }
       fechas.push_back(stoi(num));
+      num.clear();
       }
     }
   }
