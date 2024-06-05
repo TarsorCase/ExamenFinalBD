@@ -33,10 +33,7 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
-cd CodigoFuente/
-```
-```
-dotnet run ExamenFinal.cs
+dotnet run ExamenFinal.cpp
 ```
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
