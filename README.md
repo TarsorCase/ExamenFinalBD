@@ -8,31 +8,35 @@
 
 # Detalles
 
-Esta es una aplicación de consola en C# que funcione como calculadora para cifrar y decifrar cual quier texto de forma rapida y usando el cifrado cesar. La aplicación solicitara al usuario una entrada de texto de cualquier tamaño y el numero de posiciones que a de mover cada caracter en el texto con este metodo logramos realizarzar de forma correcta el cifrado cesar. 
+Este proyecto consiste en el desarrollo de un modelo de base de datos simple en C++, diseñado para gestionar eventos y fechas de manera eficiente. A continuación, se detalla la estructura y funcionalidades del modelo:
 
 ## Funcionalidad de la calculadora
 
-La calculadora ofrece las siguientes funciones de cifrado cesar: 
+El modelo de base de datos simple ofrece las siguientes funciones de gestion: 
 
-1 ---> Cifrar un mensaje. 
+1 ---> Agregar evento
 
-2 ---> Decifrar un mensaje. 
+2 ---> Eliminar evento
 
-3 ---> Cifrar y Decifrar un mismo mensaje. 
+3 ---> Eliminar todos los eventos de una fecha específica
+
+4 ---> Buscar eventos en una fecha específica
+
+5 ---> Imprimir todos los eventos
 
 ## How to Use
 
 ```
-git clone https://github.com/TarsorCase/Cifrado-Cesar.git
+git clone https://github.com/TarsorCase/ExamenFinalBD.git
 ```
 ```
-cd Cifrado-Cesar/
+cd ExamenFinalBD/
 ```
 ```
-cd Calculadora/
+cd CodigoFuente/
 ```
 ```
-dotnet run Program.cs
+dotnet run ExamenFinal.cs
 ```
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
@@ -52,7 +56,7 @@ Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este ca
 
 ## Contribution Guidelines
 
-Las contribuciones directa al proyecto son mias sin emebargo denotar el trabajo de enseñanza del profesor para lograr el proyecto. Sientase libres de subir un pull request si es que desean.
+Las contribuciones directa al proyecto son de un equipo de trabajo del que soy parte, sin emebargo denotar el trabajo de enseñanza del profesor para lograr el proyecto. Sientase libres de subir un pull request si es que desean.
 
 ## Disclaimer
 
