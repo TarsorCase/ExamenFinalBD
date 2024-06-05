@@ -71,6 +71,7 @@ int main () {
     }
   
   return 0;
+  }
 }
 
 void ClassNum(string yes){
@@ -79,14 +80,48 @@ void ClassNum(string yes){
   string num;
   for(int i = 0; i < size; ++i){
     if(isdigit(yes[i])){
-      if(yes[i - 2] == '-' && yes[i - 1] == '-' && (i - 1) >= 1){
-        num += yes[i-1];
-        int iterador = i; 
-        while(yes[iterador] != '-'){
-          num += yes[iterador];
-          ++iterador;
+      if(yes[i-1] == '-'){
+        if(i == 1){
+          num += yes[i-1];
+          if(yes[i - 3] == '-' && (i - 3) >= 0){
+            cout << "Doble guion error";
+            break;
+          }
+          for(int j = i; j < size; ++j){
+            if(isdigit(yes[j])){
+             num += yes[j];
+            }else if(yes[j] == '-'){
+             break;
+            }
+          }
+        fechas.push_back(stoi(num));
+        }else{
+          if(yes[i - 3] == '-' && (i - 3) >= 0){
+            cout << "Doble guion error";
+            break;
+          }
+          if(yes[i - 2] == '-' && (i - 2) >= 0){
+            num += yes[i-1];  
+          }
+          for(int j = i; j < size; ++j){
+            if(isdigit(yes[j])){
+             num += yes[j];
+            }else if(yes[j] == '-'){
+             break;
+            }
+          }
+        fechas.push_back(stoi(num));
         }
-      }        
+      }else{
+        for(int j = i; j < size; ++j){
+          if(isdigit(yes[j])){
+            num += yes[j];
+          }else if(yes[j] == '-'){
+            break;
+          }
+        }
+      fechas.push_back(stoi(num));
+      }
     }
   }
 }
