@@ -255,13 +255,9 @@ Siéntanse libres de subir un pull request si desean contribuir.
 <p align="center">
   <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
     <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="vsc" width="40" height="40"/>
-  <br>
-  <strong style="font-size: 24px;">TarsorCase</strong>
   </a>
   <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
     <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="vsc" width="40" height="40"/>
-  <br>
-  <strong style="font-size: 24px;">Nicole Lozada</strong>
   </a>
 </p>
 </div>
