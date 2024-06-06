@@ -25,10 +25,10 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
-          cout << "\n" << fechas[0] << " " << fechas[1] << " " << fechas[2];
+          cout << fechas[0] << " " << fechas[1] << " " << fechas[2] << "\n";
           if(fechas[1] > 0 && fechas[1] < 13){
             if(fechas[2] > 0 && fechas[2] < 32){
-              cout << fechas[0] << " " << fechas[1] << " " << fechas[2];
+              cout << fechas[0] << " " << fechas[1] << " " << fechas[2] << "\n";
             }else{
               cout << "\nDay value is invalid: " << fechas[2];
               break;
@@ -42,9 +42,10 @@ int main () {
         if(iss >> prt2){
           if(iss >> prt3){
             ClassNum(prt2);
+            cout << fechas[0] << " " << fechas[1] << " " << fechas[2] << "\n";
             if(fechas[1] > 0 && fechas[1] < 13){
               if(fechas[2] > 0 && fechas[2] < 32){
-               cout << fechas[0] << " " << fechas[1] << " " << fechas[2];
+               cout << fechas[0] << " " << fechas[1] << " " << fechas[2] << "\n";
               }else{
                 cout << "Day value is invalid: " << fechas[2];
                 break;
@@ -80,7 +81,17 @@ void ClassNum(string yes){
   int size = yes.size();
   string num;
   for(int i = 0; i < size; ++i){
-    if(isdigit(yes[i])){
+    if(isdigit(yes[i]) && i == 0){
+        for(int j = i; j < size; ++j){
+          if(isdigit(yes[j])){
+            num += yes[j];
+          }else if(yes[j] == '-'){
+              break;
+          }
+        }
+        fechas.push_back(stoi(num));
+        num.clear();
+    }else if(isdigit(yes[i]) && 0 < i && yes[i - 1] == '-'){
       if(i > 0 && yes[i-1] == '-'){
         if(i == 1){
           num += yes[i-1];
