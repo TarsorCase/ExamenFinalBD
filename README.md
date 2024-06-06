@@ -182,6 +182,7 @@ Aqui podemos ver la estructura primitiva del programa como mediante sentencias l
 y almacenar los eventos en la fecha deseade
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 <h3 align="center">🥪Como usarlo</h3>
+
 ```
 git clone https://github.com/TarsorCase/ExamenFinalBD.git
 ```
@@ -253,10 +254,10 @@ Siéntanse libres de subir un pull request si desean contribuir.
 
 <div align="center">
 <p align="center">
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+  <a href="https://github.com/TarsorCase" target="_blank" rel="noreferrer">
     <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="vsc" width="170" height="170"/>
   </a>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+  <a href="https://github.com/NicoleLozadaLeon" target="_blank" rel="noreferrer">
     <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="vsc" width="170" height="170"/>
   </a>
 </p>
