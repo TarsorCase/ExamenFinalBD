@@ -250,6 +250,23 @@ Siéntanse libres de subir un pull request si desean contribuir.
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 <h3 align="center">👤Creditos </h3>
 
+
+<div align="center">
+<p align="center">
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="vsc" width="40" height="40"/>
+  <br>
+  <strong style="font-size: 24px;">TarsorCase</strong>
+  </a>
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="vsc" width="40" height="40"/>
+  <br>
+  <strong style="font-size: 24px;">Nicole Lozada</strong>
+  </a>
+</p>
+</div>
+
+
 <p align="left">
   <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="TarsorCase" style="border-radius: 50%; width: 200px; height: 200px;"/>
   <br>
