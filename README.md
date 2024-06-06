@@ -37,8 +37,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 <h3 align="center">🐢 Estructura Repositorio</h3>
-Un proyecto bastante versatil y sencillo pero eso no significa que no pueda lograr grandes cosas
-encontramos todo el contenido en un solo ![main](main.cpp) 
+Este proyecto esta compuesto por tres diferentes archivos los cuales cada uno denota una funcionalidad el game.h funciona de union para los dos archivos y como pilar fundamental para el llamado de las funciones por otro lado el game.cpp alberga todas la funcionalidad de nuestro proyecto y por ultimo el main.cpp hace llamado y contiene todo estructura y orden en las que las funciones tienen que ser llamadas ![main](main.cpp) 
 <h2 align="center">➤Estructura</h2>
 
   ```cpp
@@ -219,8 +218,7 @@ e como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado e
 
 </p>
 
-**Las contribuciones** directas al proyecto son de un equipo de trabajo del que formamos parte, p
-ero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. 
+**Las contribuciones** directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. 
 Siéntanse libres de subir un pull request si desean contribuir.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
