@@ -238,10 +238,10 @@ Siéntanse libres de subir un pull request si desean contribuir.
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vsc" width="40" height="40"/>
   </a>
   <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://en.wikipedia.org/wiki/Linux#/media/File:Tux.svg" alt="vsc" width="40" height="40"/>
+    <img src="https://en.wikipedia.org/wiki/Linux#/media/File:Tux.svg.png" alt="vsc" width="40" height="40"/>
   </a>
   <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://en.wikipedia.org/wiki/C%2B%2B#/media/File:ISO_C++_Logo.svg" alt="vsc" width="40" height="40"/>
+    <img src="https://en.wikipedia.org/wiki/C%2B%2B#/media/File:ISO_C++_Logo.svg.png" alt="vsc" width="40" height="40"/>
   </a>
 </p>
  </div>
