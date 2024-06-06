@@ -3,14 +3,14 @@
   <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="260" height="260"></a>
 </p>
 <p align="center">
-  <h3 align="center">🎓Propuesta</h3>
+  <h3 align="center">🎓 Propuesta</h3>
 El objetivo de este proyecto es desarrollar un modelo de base de datos simple en C++ 
 para gestionar eventos y fechas de manera eficiente. Este modelo está diseñado para s
 er utilizado en aplicaciones que requieren una manera estructurada y eficiente de alm
 acenar y acceder a eventos asociados con fechas específicas.
 </p> 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-  <h3 align="center">📖Tabla Base de datos</h3>
+  <h3 align="center">📖 Tabla Base de datos</h3>
   
 | Base de Datos | Tipo          | Sistema de Gestión | Licencia       | Lenguaje de Consulta | Soporte para Transacciones | Escalabilidad           | Modelo de Datos | Soporte para la Nube    |
 |---------------|---------------|--------------------|----------------|---------------------|----------------------------|-------------------------|-----------------|-------------------------|
@@ -25,7 +25,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-<h3 align="center">🔎Justificacion </h3>
+<h3 align="center">🔎 Justificacion </h3>
 
 </p>
 
@@ -181,7 +181,7 @@ esta funcion de tipo booleana me permite eliminar los eventos la uso para los co
 Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
 y almacenar los eventos en la fecha deseade
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🥪Como usarlo</h3>
+<h3 align="center">🥪 Como usarlo</h3>
 
 ```
 git clone https://github.com/TarsorCase/ExamenFinalBD.git
@@ -190,7 +190,7 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
-dotnet run ExamenFinal.cpp
+./ExamenFinal
 ```
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
@@ -225,7 +225,7 @@ Siéntanse libres de subir un pull request si desean contribuir.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-<h3 align="center">🔎Herramientas Utilizadas </h3>
+<h3 align="center">🔎 Herramientas Utilizadas </h3>
 
 <div align="center">
 <p align="center">
