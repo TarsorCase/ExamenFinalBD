@@ -185,7 +185,7 @@ y almacenar los eventos en la fecha deseade
 <h3 align="center">👤Creditos </h3>
 
 <p align="center">
-  <img src="" alt="Santiago Abuawad" style="border-radius: 50%; width: 200px; height: 200px;"/>
+  <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="TarsorCase" style="border-radius: 50%; width: 200px; height: 200px;"/>
   <br>
   <strong style="font-size: 24px;">TarsorCase</strong>
 </p>
