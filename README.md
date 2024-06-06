@@ -181,10 +181,58 @@ esta funcion de tipo booleana me permite eliminar los eventos la uso para los co
 Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
 y almacenar los eventos en la fecha deseade
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🥪Funcionando</h3>
-<img align="center" src="https://cdn.discordapp.com/attachments/1220051274041655386/1248173763351154779/ezgif-4-a4d6309530.gif?ex=6662b3e7&is=66616267&hm=bde601702044d8004291649840c00902ab3ac038e61183e55dc7fb1226b0adfa&" alt="imagen" />
+<h3 align="center">🥪Como usarlo</h3>
+```
+git clone https://github.com/TarsorCase/ExamenFinalBD.git
+```
+```
+cd ExamenFinalBD/
+```
+```
+dotnet run ExamenFinal.cpp
+```
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
+
+Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ```
+ o ``` 2 ``` o ``` 3 ```
+
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
+
+En el caso de cifrado poner un texto por ejmplo: ``` Hola ``` 
+
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
+
+En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se des
+ea por lo que ponemos: ``` 4 ``` 
+
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
+
+Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la
+ opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad
+ de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrec
+e como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
+
+<h3 align="center">🔎 Contribution Guidelines </h3>
+
+</p>
+
+**Las contribuciones** directas al proyecto son de un equipo de trabajo del que formamos parte, p
+ero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. 
+Siéntanse libres de subir un pull request si desean contribuir.
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+
+<h3 align="center">🔎Herramientas Utilizadas </h3>
+
+<div align="center">
+ <h3>Skills</h3>
+<p align="center"> <a href=" " target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.freepik.com/512/2/2235.png" alt="mac" width="40" height="40"/> </a> <a href=" " target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/768px-Windows_logo_-_2012.svg.png" alt="window" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git" width="40" height="40"/> </a> <a href="https://www.kali.org/" target="_blank" rel="noreferrer"> <img src="https://store-images.s-microsoft.com/image/apps.26197.14261911708180816.c01bff75-7a55-49bc-bee2-a833cb67216d.21700488-d81b-48e0-bbf7-1d7f90afd071" alt="mac" width="40" height="40"/></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vsc" width="40" height="40"/> </a> <a href="https://developer.apple.com/xcode/" target="_blank" rel="noreferrer"> <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d0/3b/25/d03b25fa-e4af-f489-df82-9188f9135a66/Xcode-85-220-0-4-2x-sRGB.png/1200x630bb.png" alt="xcode" width="40" height="40"/></a> <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="js" width="40" height="40"/> </a> <a href="https://www.python.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/640px-Python.svg.png" alt="python" width="40" height="40"/> </a> <a href="https://nodejs.org/en" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="mac" width="40" height="40"/> </a> <a href="https://www.electronjs.org/es/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png" alt="mac" width="40" height="40"/> </a> <a href="https://www.mongodb.com/es" target="_blank" rel="noreferrer"> <img src="https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png" alt="mac" width="40" height="40"/> </a> <a href="https://es.wikipedia.org/wiki/SQL" target="_blank" rel="noreferrer"> <img src="https://www.pontia.tech/wp-content/uploads/2023/06/Imagen1.png" alt="mac" width="40" height="40"/> </a> 
+ </div>
+
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 <h3 align="center">👤Creditos </h3>
 
 <p align="left">
@@ -193,8 +241,8 @@ y almacenar los eventos en la fecha deseade
   <strong style="font-size: 24px;">TarsorCase</strong>
 </p>
 <p align="left">
-  <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="TarsorCase" style="border-radius: 50%; width: 200px; height: 200px;"/>
+  <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="Nicole Lozada" style="border-radius: 50%; width: 200px; height: 200px;"/>
   <br>
-  <strong style="font-size: 24px;">TarsorCase</strong>
+  <strong style="font-size: 24px;">Nicole Lozada</strong>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
