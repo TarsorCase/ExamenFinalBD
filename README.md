@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="250" height="250"></a>
+  <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="300" height="300"></a>
 </p>
 <p align="center">
   <h3 align="center">🎓Propuesta</h3>
