@@ -4,7 +4,10 @@
 </p>
 <p align="center">
   <h3 align="center">🎓Propuesta</h3>
-  Pérdidas, números rojos , mala administración son factores que toda empresa teme. Uno de los generadores de este problema es la mala gestión de información . El mal manejo de esta no solo ralentiza el rendimiento laboral, sino también causa a largo y corto plazo todos estos factores. Es por eso que, como desarrollador, creo que una buena base de datos es esencial para cualquier empresa que quiera destacar en el ámbito laboral. Una base de datos no solo anula todo lo anteriormente mencionado, sino también destaca a la empresa entre otras que no han podido visualizar esta increíble tecnología.
+El objetivo de este proyecto es desarrollar un modelo de base de datos simple en C++ 
+para gestionar eventos y fechas de manera eficiente. Este modelo está diseñado para s
+er utilizado en aplicaciones que requieren una manera estructurada y eficiente de alm
+acenar y acceder a eventos asociados con fechas específicas.
 </p> 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
   <h3 align="center">📖Tabla Base de datos</h3>
