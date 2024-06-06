@@ -3,9 +3,6 @@
   <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="300" height="300"></a>
 </p>
 <p align="center">
-<a href="https://github.com/TarsorCase"><img title="Author" src="https://img.shields.io/badge/Author-TarsorCase-blue?style=for-the-badge&logo=github"></a>
-</p>
-<p align="center">
   <h3 align="center">🎓Propuesta</h3>
   Pérdidas, números rojos , mala administración son factores que toda empresa teme. Uno de los generadores de este problema es la mala gestión de información . El mal manejo de esta no solo ralentiza el rendimiento laboral, sino también causa a largo y corto plazo todos estos factores. Es por eso que, como desarrollador, creo que una buena base de datos es esencial para cualquier empresa que quiera destacar en el ámbito laboral. Una base de datos no solo anula todo lo anteriormente mencionado, sino también destaca a la empresa entre otras que no han podido visualizar esta increíble tecnología.
 </p> 
@@ -188,20 +185,9 @@ y almacenar los eventos en la fecha deseade
 <h3 align="center">👤Creditos </h3>
 
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/1220051274041655386/1248163877192073376/96D66425-BA3A-419E-A690-382CD7A50CCA.jpg?ex=6662aab2&is=66615932&hm=6c1e4cf75adfc4b8f28a5f17938c48e2912da13d9446d541b0985107ff5544b2&=&format=webp&width=355&height=632" alt="Santiago Abuawad" style="border-radius: 50%; width: 200px; height: 200px;"/>
+  <img src="" alt="Santiago Abuawad" style="border-radius: 50%; width: 200px; height: 200px;"/>
   <br>
-  <strong style="font-size: 24px;">Santiago Abuawad</strong>
+  <strong style="font-size: 24px;">TarsorCase</strong>
 </p>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🔧Tecnologias</h3>
-<div >
-	<table>
-		<tr>
-			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="vsc" title="JavaScript"/></code></td>
-			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png" alt="cpp" title="Node.js"/></code></td>
-			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png" alt="Ubuntu" title="React"/></code></td>
-		</tr>
-	</table>
-</div>
-
