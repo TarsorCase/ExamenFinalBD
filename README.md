@@ -1,80 +1,207 @@
+
 <p align="center">
 <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Caesar3.svg"></a>
 </p>
 <p align="center">
 <a href="https://github.com/TarsorCase"><img title="Author" src="https://img.shields.io/badge/Author-TarsorCase-blue?style=for-the-badge&logo=github"></a>
 </p>
+<p align="center">
+  <h3 align="center">🎓Propuesta</h3>
+  Pérdidas, números rojos , mala administración son factores que toda empresa teme. Uno de los generadores de este problema es la mala gestión de información . El mal manejo de esta no solo ralentiza el rendimiento laboral, sino también causa a largo y corto plazo todos estos factores. Es por eso que, como desarrollador, creo que una buena base de datos es esencial para cualquier empresa que quiera destacar en el ámbito laboral. Una base de datos no solo anula todo lo anteriormente mencionado, sino también destaca a la empresa entre otras que no han podido visualizar esta increíble tecnología.
+</p> 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+  <h3 align="center">📖Tabla Base de datos</h3>
+  
+| Base de Datos | Tipo          | Sistema de Gestión | Licencia       | Lenguaje de Consulta | Soporte para Transacciones | Escalabilidad           | Modelo de Datos | Soporte para la Nube    |
+|---------------|---------------|--------------------|----------------|---------------------|----------------------------|-------------------------|-----------------|-------------------------|
+| MySQL         | Relacional    | MySQL              | GPL            | SQL                 | Sí                         | Vertical                | Tablas          | AWS, Azure, Google Cloud|
+| PostgreSQL    | Relacional    | PostgreSQL         | PostgreSQL     | SQL                 | Sí                         | Horizontal y Vertical   | Tablas          | AWS, Azure, Google Cloud|
+| MongoDB       | No relacional | MongoDB            | SSPL, Apache   | NoSQL               | Limitado                   | Horizontal              | Documentos      | AWS, Azure, Google Cloud|
+| Cassandra     | No relacional | Apache Cassandra   | Apache         | NoSQL               | No                         | Horizontal              | Clave-valor     | AWS, Azure, Google Cloud|
+| Neo4j         | No relacional | Neo4j              | GPL, Comercial | Cypher              | Sí                         | Horizontal              | Grafo           | AWS, Azure, Google Cloud|
 
 
-# Proyecto de Modelo de Base de Datos Simple en C++
+Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui tenemos sus caracterisitcas y una compracion al respecto.
 
-## El Problema
-El objetivo de este proyecto es desarrollar un modelo de base de datos simple en C++ para gestionar eventos y fechas de manera eficiente. Este modelo está diseñado para ser utilizado en aplicaciones que requieren una manera estructurada y eficiente de almacenar y acceder a eventos asociados con fechas específicas.
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-## Comparativa y Justificación de Bases de Datos Existentes
+<h3 align="center">🔎Justificacion </h3>
 
-## Funcionalidades del Modelo de Base de Datos
+</p>
 
-El modelo de base de datos simple ofrece las siguientes funciones de gestion: 
+**Almacenamiento de información** Permiten almacenar grandes cantidades de información organizada de manera que se puede acceder, gestionar y actualizar eficientemente.
+**Toma de decisiones** La información organizada en una base de datos puede ser utilizada para análisis y toma de decisiones estratégicas, ayudando a las empresas a comprender mejor sus operaciones, clientes y mercados.
+**Eficiencia operacional** Automatizan y simplifican muchos procesos, reduciendo errores humanos y aumentando la eficiencia.
+**Soporte para aplicaciones de negocios** Las bases de datos son la columna vertebral de muchas aplicaciones empresariales como sistemas de planificación de recursos empresariales (ERP) y gestión de relaciones con clientes (CRM).
 
-1 ---> Agregar evento
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-2 ---> Eliminar evento
+<h3 align="center">🐢 Estructura Repositorio</h3>
+Un proyecto bastante versatil y sencillo pero eso no significa que no pueda lograr grandes cosas
+encontramos todo el contenido en un solo ![main](main.cpp) 
+<h2 align="center">➤Estructura</h2>
 
-3 ---> Eliminar todos los eventos de una fecha específica
+  ```cpp
+  struct Fecha {
+    int anio;
+    int mes;
+    int dia;
+};
+  ```
 
-4 ---> Buscar eventos en una fecha específica
-
-5 ---> Imprimir todos los eventos
-
-## How to Use
-
+<h2 align="center">➤Funciones</h2>
+<details>
+<summary>Validar Fecha</summary>
+  
+  ```cpp
+bool validarFecha(int anio, int mes, int dia) {
+    if(anio == 0) {
+        cout << "Year value is invalid: " << anio << endl;
+        return false;
+    }
+    if(mes < 1 || mes > 12 )
+    {
+        cout << "Month value is invalid: "<< mes << endl;
+        return false;
+    }
+    if (dia < 1 || dia > 31) 
+    {
+        cout << "Day value is invalid: "<<dia<<endl;
+        return false;
+    }
+    if(mes == 2) 
+    {
+        if(dia > 29)
+        {
+            cout << "Day value is invalid: "<< dia << endl;
+            return false;
+        }
+    }
+    else if(mes == 4 || mes == 6 || mes == 9 || mes == 11) 
+    {
+        if(dia > 30) {
+            cout << "Day value is invalid: "<< dia << endl;
+            return false;
+        }
+    }
+    return true;
+}
 ```
-git clone https://github.com/TarsorCase/ExamenFinalBD.git
+
+Basicamente mediante una funcion booleana dentro de funcionan agrego filtros en forma de sentencias que permiten detectar si una fecha no es valida es decir su formato es erroneo
+</details>
+
+<details>
+<summary>Contar Guiones</summary>
+
+  ```cpp
+int contarGuiones(const string& str) {
+    int count = 0;
+    for (char c : str) {
+        if (c == '-') {
+            count++;
+        }
+    }
+    return count;
+}
 ```
+
+Esta funcion me permite asegurarme que la fecha siga el formato year-moth-day
+</details>
+
+<details>
+<summary>formatearFecha</summary>
+
+  ```cpp
+string formatearFecha(int anio, int mes, int dia) {
+    return to_string(anio) + "-" + (mes < 10 ? "0" : "") + to_string(mes) + "-" + (dia < 10 ? "0" : "") + to_string(dia);
+}
 ```
-cd ExamenFinalBD/
+
+Esta funcion me permite agregar los 0 que faltan a la fecha
+</details>
+
+<details>
+  <summary>insertarEventoEnOrden</summary>
+
+  ```cpp
+void insertarEventoEnOrden(vector<string>& eventos, const string& evento) {
+    auto it = eventos.begin();
+    while (it != eventos.end() && *it < evento) {
+        ++it;
+    }
+    if(it == eventos.end() || *it != evento) {
+        eventos.insert(it,evento);
+    }
+}
 ```
+
+Con esto ordeno los eventos en orden acendente como es requerido
+</details>
+
+<details>
+  <summary>imprimirFechas</summary>
+
+  ```cpp
+void imprimirFechas(const map<string, vector<string>>& fechas) {
+    for (const auto& par : fechas) {
+        cout << "Fecha: " << par.first << endl;
+        for (const auto& evento : par.second) {
+            cout << "  - " << evento << endl;
+        }
+        cout << "-----------------------------------" << endl;
+    }
+}
 ```
-dotnet run ExamenFinal.cpp
+
+Con esta funcion muestro las fechas en consola
+</details>
+
+<details>
+<summary>eliminarEvento</summary>
+
+  ```cpp
+bool eliminarEvento(vector<string>& eventos, const string& evento) {
+    for (auto it = eventos.begin(); it != eventos.end(); ++it) {
+        if (*it == evento) {
+            eventos.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
 ```
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
-Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
+esta funcion de tipo booleana me permite eliminar los eventos la uso para los comandos de eliminacion
+</details>
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">🌲Diagrama de flujo </h3>
+<img src="diagrama-bd.png" alt="linea" />
+Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
+y almacenar los eventos en la fecha deseade
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">🥪Funcionando</h3>
+<img align="center" src="https://cdn.discordapp.com/attachments/1220051274041655386/1248173763351154779/ezgif-4-a4d6309530.gif?ex=6662b3e7&is=66616267&hm=bde601702044d8004291649840c00902ab3ac038e61183e55dc7fb1226b0adfa&" alt="imagen" />
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-En el caso de cifrado poner un texto por ejmplo: ``` Hola ``` 
+<h3 align="center">👤Creditos </h3>
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/1220051274041655386/1248163877192073376/96D66425-BA3A-419E-A690-382CD7A50CCA.jpg?ex=6662aab2&is=66615932&hm=6c1e4cf75adfc4b8f28a5f17938c48e2912da13d9446d541b0985107ff5544b2&=&format=webp&width=355&height=632" alt="Santiago Abuawad" style="border-radius: 50%; width: 200px; height: 200px;"/>
+  <br>
+  <strong style="font-size: 24px;">Santiago Abuawad</strong>
+</p>
 
-En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se desea por lo que ponemos: ``` 4 ``` 
-
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
-
-Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
-
-## Contribution Guidelines
-Las contribuciones directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. Siéntanse libres de subir un pull request si desean contribuir.
-
-## Creditos
-- **Nicole Lozada** - [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
-- **Gerard Gonzalez** - [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
-- **Docente** - Orientación y enseñanza
-
-## Herramientas Utilizadas
-- **C++**: Lenguaje de programación principal.
-- **g++**: Compilador utilizado para construir el proyecto.
-- **GitHub**: Plataforma para alojar el repositorio y facilitar la colaboración.
-
-## Disclaimer
-Por favor, tener en cuenta que este repositorio es un proyecto universitario. Los recursos aquí disponibles son totalmente utilizables para cualquier individuo interesado en entender cómo funciona el proyecto.
-
-## Contact
-Si tienes alguna pregunta, inquietud o comentario sobre este repositorio, por favor no dudes en comunicarte. Puedes contactarnos abriendo un problema o enviándonos un correo electrónico a:
-
-- [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
-- [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
-
-Happy Coding! 🚀
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">🔧Tecnologias</h3>
+<div >
+	<table>
+		<tr>
+			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="vsc" title="JavaScript"/></code></td>
+			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png" alt="cpp" title="Node.js"/></code></td>
+			<td><code><img width="50" src="https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png" alt="Ubuntu" title="React"/></code></td>
+		</tr>
+	</table>
+</div>
 
