@@ -33,10 +33,8 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
-          //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
           if(fecha[1] > 0 && fecha[1] < 13){
             if(fecha[2] > 0 && fecha[2] < 32){
-              //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
             }else{
               cout << "\nDay value is invalid: " << fecha[2];
               break;
@@ -51,10 +49,8 @@ int main () {
         if(iss >> prt2){
           if(iss >> prt3){
             ClassNum(prt2);
-            //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
             if(fecha[1] > 0 && fecha[1] < 13){
               if(fecha[2] > 0 && fecha[2] < 32){
-               //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
                DelDateEvent(prt2, prt3, Info); 
               }else{
                 cout << "Day value is invalid: " << fecha[2];
