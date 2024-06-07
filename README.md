@@ -1,5 +1,5 @@
-
 <p align="center">
+ <h1> Modelo de Base de Datos simple</h1>
   <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="260" height="260"></a>
 </p>
 <p align="center">
@@ -25,162 +25,48 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-<h3 align="center">🔎 Justificacion </h3>
-
-</p>
-
-**Almacenamiento de información** Permiten almacenar grandes cantidades de información organizada de manera que se puede acceder, gestionar y actualizar eficientemente.
-**Toma de decisiones** La información organizada en una base de datos puede ser utilizada para análisis y toma de decisiones estratégicas, ayudando a las empresas a comprender mejor sus operaciones, clientes y mercados.
-**Eficiencia operacional** Automatizan y simplifican muchos procesos, reduciendo errores humanos y aumentando la eficiencia.
-**Soporte para aplicaciones de negocios** Las bases de datos son la columna vertebral de muchas aplicaciones empresariales como sistemas de planificación de recursos empresariales (ERP) y gestión de relaciones con clientes (CRM).
+<h3 align="center">🔎 Justificación </h3>
+<p align="center">✨ Las bases de datos: El corazón de la eficiencia y la toma de decisiones empresariales ✨</p>
+<div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
+  <h4>📚 Almacenamiento de información</h4>
+  <p>Permiten almacenar grandes cantidades de información organizada de manera que se puede acceder, gestionar y actualizar eficientemente.</p>
+</div>
+<div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
+  <h4>📊 Toma de decisiones</h4>
+  <p>La información organizada en una base de datos puede ser utilizada para análisis y toma de decisiones estratégicas, ayudando a las empresas a comprender mejor sus operaciones, clientes y mercados.</p>
+</div>
+<div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
+  <h4>⚙️ Eficiencia operacional</h4>
+  <p>Automatizan y simplifican muchos procesos, reduciendo errores humanos y aumentando la eficiencia.</p>
+</div>
+<div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
+  <h4>🏢 Soporte para aplicaciones de negocios</h4>
+  <p>Las bases de datos son la columna vertebral de muchas aplicaciones empresariales como sistemas de planificación de recursos empresariales (ERP) y gestión de relaciones con clientes (CRM).</p>
+</div>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 <h3 align="center">🐢 Estructura Repositorio</h3>
-Este proyecto esta compuesto por tres diferentes archivos los cuales cada uno denota una funcionalidad el game.h funciona de union para los dos archivos y como pilar fundamental para el llamado de las funciones por otro lado el game.cpp alberga todas la funcionalidad de nuestro proyecto y por ultimo el main.cpp hace llamado y contiene todo estructura y orden en las que las funciones tienen que ser llamadas ![main](main.cpp) 
-<h2 align="center">➤Estructura</h2>
 
-  ```cpp
-  struct Fecha {
-    int anio;
-    int mes;
-    int dia;
-};
-  ```
+## Funcionalidades del Modelo de Base de Datos
 
-<h2 align="center">➤Funciones</h2>
-<details>
-<summary>Validar Fecha</summary>
-  
-  ```cpp
-bool validarFecha(int anio, int mes, int dia) {
-    if(anio == 0) {
-        cout << "Year value is invalid: " << anio << endl;
-        return false;
-    }
-    if(mes < 1 || mes > 12 )
-    {
-        cout << "Month value is invalid: "<< mes << endl;
-        return false;
-    }
-    if (dia < 1 || dia > 31) 
-    {
-        cout << "Day value is invalid: "<<dia<<endl;
-        return false;
-    }
-    if(mes == 2) 
-    {
-        if(dia > 29)
-        {
-            cout << "Day value is invalid: "<< dia << endl;
-            return false;
-        }
-    }
-    else if(mes == 4 || mes == 6 || mes == 9 || mes == 11) 
-    {
-        if(dia > 30) {
-            cout << "Day value is invalid: "<< dia << endl;
-            return false;
-        }
-    }
-    return true;
-}
-```
+El modelo de base de datos simple ofrece las siguientes funciones de gestion: 
 
-Basicamente mediante una funcion booleana dentro de funcionan agrego filtros en forma de sentencias que permiten detectar si una fecha no es valida es decir su formato es erroneo
-</details>
+1---> Clase número
 
-<details>
-<summary>Contar Guiones</summary>
+2---> Agregar evento
 
-  ```cpp
-int contarGuiones(const string& str) {
-    int count = 0;
-    for (char c : str) {
-        if (c == '-') {
-            count++;
-        }
-    }
-    return count;
-}
-```
+3---> Eliminar evento
 
-Esta funcion me permite asegurarme que la fecha siga el formato year-moth-day
-</details>
+4---> Eliminar todos los eventos de una fecha específica
 
-<details>
-<summary>formatearFecha</summary>
+5---> Imprimir eventos de una fecha específica
 
-  ```cpp
-string formatearFecha(int anio, int mes, int dia) {
-    return to_string(anio) + "-" + (mes < 10 ? "0" : "") + to_string(mes) + "-" + (dia < 10 ? "0" : "") + to_string(dia);
-}
-```
+6---> Buscar eventos en una fecha específica
 
-Esta funcion me permite agregar los 0 que faltan a la fecha
-</details>
+7---> Mostrar ayuda
 
-<details>
-  <summary>insertarEventoEnOrden</summary>
-
-  ```cpp
-void insertarEventoEnOrden(vector<string>& eventos, const string& evento) {
-    auto it = eventos.begin();
-    while (it != eventos.end() && *it < evento) {
-        ++it;
-    }
-    if(it == eventos.end() || *it != evento) {
-        eventos.insert(it,evento);
-    }
-}
-```
-
-Con esto ordeno los eventos en orden acendente como es requerido
-</details>
-
-<details>
-  <summary>imprimirFechas</summary>
-
-  ```cpp
-void imprimirFechas(const map<string, vector<string>>& fechas) {
-    for (const auto& par : fechas) {
-        cout << "Fecha: " << par.first << endl;
-        for (const auto& evento : par.second) {
-            cout << "  - " << evento << endl;
-        }
-        cout << "-----------------------------------" << endl;
-    }
-}
-```
-
-Con esta funcion muestro las fechas en consola
-</details>
-
-<details>
-<summary>eliminarEvento</summary>
-
-  ```cpp
-bool eliminarEvento(vector<string>& eventos, const string& evento) {
-    for (auto it = eventos.begin(); it != eventos.end(); ++it) {
-        if (*it == evento) {
-            eventos.erase(it);
-            return true;
-        }
-    }
-    return false;
-}
-```
-
-esta funcion de tipo booleana me permite eliminar los eventos la uso para los comandos de eliminacion
-</details>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🌲Diagrama de flujo </h3>
-<img src="diagrama-bd.png" alt="linea" />
-Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
-y almacenar los eventos en la fecha deseade
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🥪 Como usarlo</h3>
+## How to Use
 
 ```
 git clone https://github.com/TarsorCase/ExamenFinalBD.git
@@ -189,12 +75,11 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
-./ExamenFinal
+dotnet run ExamenFinal.cpp
 ```
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
-Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ```
- o ``` 2 ``` o ``` 3 ```
+Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
@@ -202,63 +87,33 @@ En el caso de cifrado poner un texto por ejmplo: ``` Hola ```
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
 
-En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se des
-ea por lo que ponemos: ``` 4 ``` 
+En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se desea por lo que ponemos: ``` 4 ``` 
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
 
-Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la
- opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad
- de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrec
-e como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
 
+## Contribution Guidelines
+Las contribuciones directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. Siéntanse libres de subir un pull request si desean contribuir.
 
-<h3 align="center">🔎 Contribution Guidelines </h3>
+## Creditos
+- **Nicole Lozada** - [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
+- **Gerard Gonzalez** - [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
+- **Docente** - Orientación y enseñanza
 
-</p>
+## Herramientas Utilizadas
+- **C++**: Lenguaje de programación principal.
+- **g++**: Compilador utilizado para construir el proyecto.
+- **GitHub**: Plataforma para alojar el repositorio y facilitar la colaboración.
 
-**Las contribuciones** directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. 
-Siéntanse libres de subir un pull request si desean contribuir.
+## Disclaimer
+Por favor, tener en cuenta que este repositorio es un proyecto universitario. Los recursos aquí disponibles son totalmente utilizables para cualquier individuo interesado en entender cómo funciona el proyecto.
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+## Contact
+Si tienes alguna pregunta, inquietud o comentario sobre este repositorio, por favor no dudes en comunicarte. Puedes contactarnos abriendo un problema o enviándonos un correo electrónico a:
 
-<h3 align="center">🔎 Herramientas Utilizadas </h3>
+- [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
+- [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
 
-<div align="center">
-<p align="center">
-  <a href=" " target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/768px-Windows_logo_-_2012.svg.png" alt="window" width="40" height="40"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git" width="40" height="40"/>
-  </a>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vsc" width="40" height="40"/>
-  </a>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="vsc" width="40" height="40"/>
-  </a>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" alt="vsc" width="40" height="40"/>
-  </a>
-</p>
- </div>
+Happy Coding! 🚀
 
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">👤Creditos </h3>
-
-
-<div align="center">
-<p align="center">
-  <a href="https://github.com/TarsorCase" target="_blank" rel="noreferrer">
-    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="vsc" width="170" height="170"/>
-  </a>
-  <a href="https://github.com/NicoleLozadaLeon" target="_blank" rel="noreferrer">
-    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="vsc" width="170" height="170"/>
-  </a>
-</p>
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
