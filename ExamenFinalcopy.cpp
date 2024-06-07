@@ -158,16 +158,14 @@ void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info){
   Info[yes].insert(event);
 }
 
-
-
-void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){
+void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){ //modificado
   auto it = Info.find(yes);
     if (it != Info.end()) {
         it->second.erase(event);
-        if (it->second.empty()) {
-            Info.erase(it);
+        //if (it->second.empty()) {
+        //    Info.erase(it);
             cout << "Deleted successfully" << "\n";
-        }
+        //}
     }else{
       cout << "Event not found" << "\n";
   }
@@ -221,7 +219,7 @@ void Print(string &yes, map<string, set<string>>& Info) {
                 day = '0' + day;
             } 
 
-            cout << year << "-" << month << "-" << day << " ";
+            cout << year << "-" << month << "-" << day << " " << "\n"; //add new line para separar fecha / eventos
             for (const auto& event : BD.second) {
                 cout << event << "\n";
             }
