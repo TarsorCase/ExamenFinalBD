@@ -55,30 +55,34 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <h2 align="center">➤Funciones</h2>
 <details>
-<summary>1---> Clase número</summary>
+<summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
 </details>
+
 <details>
-<summary>2---> Agregar evento</summary>
+<summary>Eliminar evento ---> Del <-fecha-> <-evento-></summary>
 </details>
+
 <details>
-<summary>3---> Eliminar evento</summary>
+<summary>Eliminar fecha ---> DelDate <-fecha-></summary>
 </details>
+
 <details>
-<summary>4---> Eliminar todos los eventos de una fecha específica</summary>
+<summary>Imprimir eventos ---> Print <-fecha-></summary>
 </details>
+
 <details>
-<summary>5---> Imprimir eventos de una fecha específica</summary>
+<summary>Buscar fecha ---> FindDate <-fecha-></summary>
 </details>
+
 <details>
-<summary>6---> Buscar eventos en una fecha específica</summary>
+<summary>Ayuda ---> Help</summary>
 </details>
-<details>
-<summary>7---> Mostrar ayuda</summary>
-</details>
+
+
 
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
-<h3 align="center">🌲Diagrama de flujo </h3>
+<h3 align="center">🌲Pseudocodigo </h3>
 <img src="diagrama-bd.png" alt="linea" />
 Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
 y almacenar los eventos en la fecha deseade
