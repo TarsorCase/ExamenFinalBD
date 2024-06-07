@@ -219,9 +219,10 @@ void Print(string &yes, map<string, set<string>>& Info) {
                 day = '0' + day;
             } 
 
-            cout << year << "-" << month << "-" << day << " " << "\n"; //add new line para separar fecha / eventos
+            cout << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
+            //cout << year << "-" << month << "-" << day << " " << "\n"; //add new line para separar fecha / eventos
             for (const auto& event : BD.second) {
-                cout << event << "\n";
+                cout << event << " ";
             }
         }
     }
