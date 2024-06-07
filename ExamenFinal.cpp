@@ -75,10 +75,10 @@ int main () {
         
       }else if(prt1 == "Find"){
         if(iss >> prt2){
-            //FindDate(prt2, Info);
+            FindDate(prt2, Info);
         }
       }else if(prt1 == "Print"){
-            //Print(prt1, Info);
+            Print(prt1, Info);
       }
     }
   }
