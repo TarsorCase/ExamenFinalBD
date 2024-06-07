@@ -1,7 +1,8 @@
-<p align="center">
- <h1> Modelo de Base de Datos simple</h1>
+<div style="text-align: center;">
+  <h1>Modelo de Base de Datos simple</h1>
   <a href="#"><img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="260" height="260"></a>
-</p>
+</div>
+
 <p align="center">
   <h3 align="center">🎓 Propuesta</h3>
 El objetivo de este proyecto es desarrollar un modelo de base de datos simple en C++ 
