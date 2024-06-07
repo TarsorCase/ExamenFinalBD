@@ -53,7 +53,9 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <h3 align="center">🐢 Estructura Repositorio</h3>
 
-<h2 align="center">➤Funciones</h2>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+
+<h3 align="center">➤Funciones</h3>
 <details>
 <summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
 </details>
