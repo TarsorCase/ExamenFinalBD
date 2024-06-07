@@ -176,7 +176,11 @@ void DelDate(string &yes, map<string, set<string>>& Info){
     if (it != Info.end()) {
         int n = it->second.size();
         Info.erase(it);
-        cout << "Deleted " << n << " events" << "\n";
+        if(n == 1){
+          cout << "Deleted " << n << " event" << "\n";
+        }else{
+          cout << "Deleted " << n << " events" << "\n";
+        }
     } else {
         cout << "Date not found" << "\n";
     }
@@ -215,11 +219,10 @@ void Print(string &yes, map<string, set<string>>& Info) {
                 day = '0' + day;
             } 
 
-            cout << year << "-" << month << "-" << day << ":\n";
+            cout << year << "-" << month << "-" << day << " ";
             for (const auto& event : BD.second) {
-                cout << event << endl;
+                cout << event << "\n";
             }
-            cout << endl;
         }
     }
 }
