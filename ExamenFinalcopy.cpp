@@ -80,6 +80,9 @@ int main () {
         }
       }else if(prt1 == "Print"){
             Print(prt1, Info);
+      }else{
+        cout << "Unknown command: " << prt1 << "\n";
+        cout << "Type \"Help\" to see commands" << "\n";
       }
     }
   }
@@ -237,3 +240,19 @@ void FindDate(string &yes,map<string, set<string>>& Info){
         cout << "No events found for the date: " << yes << "\n";
     }
 }
+
+void Help() {
+    cout << "Usage: \n";
+    cout << "Add <date> <event>: Add an event to the specified date.\n";
+    cout << "Del <date> <event>: Delete the specified event from the date.\n";
+    cout << "Del <date>: Delete all events for the specified date.\n";
+    cout << "Find <date>: Find all events for the specified date.\n";
+    cout << "Print: Print all dates and their associated events.\n";
+    cout << "For <date>, use format YYYY-MM-DD.\n";
+    cout << "Example: Add 2024-06-07 Meeting\n";
+    cout << "         Del 2024-06-07 Meeting\n";
+    cout << "         Del 2024-06-07\n";
+    cout << "         Find 2024-06-07\n";
+    cout << "         Print\n";
+}
+
