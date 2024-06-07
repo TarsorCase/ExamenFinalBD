@@ -14,6 +14,7 @@ void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info);
 void DelDate(string &yes, map<string, set<string>>& Info);
 void Print(string &yes,map<string, set<string>>& Info);
 void FindDate(string &yes, map<string, set<string>>& Info);
+void Help();
 
 vector<int> fecha;
 
@@ -80,6 +81,8 @@ int main () {
         }
       }else if(prt1 == "Print"){
             Print(prt1, Info);
+      }else if(prt1 == "Help"){
+        Help();
       }else{
         cout << "Unknown command: " << prt1 << "\n";
         cout << "Type \"Help\" to see commands" << "\n";
