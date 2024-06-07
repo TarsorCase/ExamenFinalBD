@@ -1,8 +1,11 @@
 
  <h1 align="center"> Modelo de Base de Datos simple</h1>
-  <a href="#" style="display: block; margin: 0 auto;">
-  <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/base-de-datos.png" width="260" height="260">
+  <div style="text-align: center;">
+  <a href="#">
+    <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/base-de-datos.png" width="260" height="260" style="display: inline-block;">
   </a>
+</div>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
   <h3 align="center">🎓 Propuesta</h3>
