@@ -53,25 +53,37 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <h3 align="center">🐢 Estructura Repositorio</h3>
 
-## Funcionalidades del Modelo de Base de Datos
+<h2 align="center">➤Funciones</h2>
+<details>
+<summary>1---> Clase número</summary>
+</details>
+<details>
+<summary>2---> Agregar evento</summary>
+</details>
+<details>
+<summary>3---> Eliminar evento</summary>
+</details>
+<details>
+<summary>4---> Eliminar todos los eventos de una fecha específica</summary>
+</details>
+<details>
+<summary>5---> Imprimir eventos de una fecha específica</summary>
+</details>
+<details>
+<summary>6---> Buscar eventos en una fecha específica</summary>
+</details>
+<details>
+<summary>7---> Mostrar ayuda</summary>
+</details>
 
-El modelo de base de datos simple ofrece las siguientes funciones de gestion: 
 
-1---> Clase número
-
-2---> Agregar evento
-
-3---> Eliminar evento
-
-4---> Eliminar todos los eventos de una fecha específica
-
-5---> Imprimir eventos de una fecha específica
-
-6---> Buscar eventos en una fecha específica
-
-7---> Mostrar ayuda
-
-## How to Use
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">🌲Diagrama de flujo </h3>
+<img src="diagrama-bd.png" alt="linea" />
+Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
+y almacenar los eventos en la fecha deseade
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">🥪 Como usarlo</h3>
 
 ```
 git clone https://github.com/TarsorCase/ExamenFinalBD.git
@@ -80,11 +92,12 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
-dotnet run ExamenFinal.cpp
+./ExamenFinal
 ```
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
-Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
+Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ```
+ o ``` 2 ``` o ``` 3 ```
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
@@ -92,33 +105,63 @@ En el caso de cifrado poner un texto por ejmplo: ``` Hola ```
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
 
-En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se desea por lo que ponemos: ``` 4 ``` 
+En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se des
+ea por lo que ponemos: ``` 4 ``` 
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
 
-Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
+Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la
+ opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad
+ de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrec
+e como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-## Contribution Guidelines
-Las contribuciones directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. Siéntanse libres de subir un pull request si desean contribuir.
 
-## Creditos
-- **Nicole Lozada** - [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
-- **Gerard Gonzalez** - [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
-- **Docente** - Orientación y enseñanza
+<h3 align="center">🔎 Contribution Guidelines </h3>
 
-## Herramientas Utilizadas
-- **C++**: Lenguaje de programación principal.
-- **g++**: Compilador utilizado para construir el proyecto.
-- **GitHub**: Plataforma para alojar el repositorio y facilitar la colaboración.
+</p>
 
-## Disclaimer
-Por favor, tener en cuenta que este repositorio es un proyecto universitario. Los recursos aquí disponibles son totalmente utilizables para cualquier individuo interesado en entender cómo funciona el proyecto.
+**Las contribuciones** directas al proyecto son de un equipo de trabajo del que formamos parte, pero es importante reconocer la orientación y enseñanza del profesor para lograr el proyecto. 
+Siéntanse libres de subir un pull request si desean contribuir.
 
-## Contact
-Si tienes alguna pregunta, inquietud o comentario sobre este repositorio, por favor no dudes en comunicarte. Puedes contactarnos abriendo un problema o enviándonos un correo electrónico a:
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-- [nicole.lozada@ucb.edu.bo](mailto:nicole.lozada@ucb.edu.bo)
-- [gerard.gonzalez@ucb.edu.bo](mailto:gerard.gonzalez@ucb.edu.bo)
+<h3 align="center">🔎 Herramientas Utilizadas </h3>
 
-Happy Coding! 🚀
+<div align="center">
+<p align="center">
+  <a href=" " target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/768px-Windows_logo_-_2012.svg.png" alt="window" width="40" height="40"/>
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git" width="40" height="40"/>
+  </a>
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vsc" width="40" height="40"/>
+  </a>
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="vsc" width="40" height="40"/>
+  </a>
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" alt="vsc" width="40" height="40"/>
+  </a>
+</p>
+ </div>
 
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+<h3 align="center">👤Creditos </h3>
+
+
+<div align="center">
+<p align="center">
+  <a href="https://github.com/TarsorCase" target="_blank" rel="noreferrer">
+    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/TarsorCase.jpg" alt="vsc" width="170" height="170"/>
+  </a>
+  <a href="https://github.com/NicoleLozadaLeon" target="_blank" rel="noreferrer">
+    <img src="https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/142690531.png" alt="vsc" width="170" height="170"/>
+  </a>
+</p>
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
