@@ -1,9 +1,9 @@
 
  <h1 align="center"> Modelo de Base de Datos simple</h1>
-  <div style="text-align: center;">
-  <a href="#">
-    <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/base-de-datos.png" width="260" height="260" style="display: inline-block;">
-  </a>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/base-de-datos.png" width="260" height="260" style="display: inline-block;">
+</p>
 </div>
 
 <p align="center">
