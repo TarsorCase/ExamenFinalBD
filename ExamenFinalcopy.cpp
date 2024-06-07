@@ -1,4 +1,5 @@
 #include <cctype>
+#include <set>
 #include <iostream>
 #include <map>
 #include <string>
@@ -8,16 +9,16 @@
 using namespace std;
 
 void ClassNum(string yes);
-void AddDateEvent(string yes, string event, map<string, vector<string>>& Info);
-void DelDateEvent(string yes, string event, map<string, vector<string>>& Info);
-void DelDate(string yes, map<string, vector<string>>& Info);
-void Print(string yes,map<string, vector<string>>& Info);
-void FindDate(string yes, map<string, vector<string>>& Info);
+void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info);
+void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info);
+void DelDate(string &yes, map<string, set<string>>& Info);
+void Print(string &yes,map<string, set<string>>& Info);
+void FindDate(string &yes, map<string, set<string>>& Info);
 
 vector<int> fecha;
 
 int main () {
-  map<string, vector<string>> Info; 
+  map<string, set<string>> Info; 
   string comandos;
   string prt1;
   string prt2;
@@ -151,58 +152,37 @@ void ClassNum(string yes){
   }
 }
 
-void AddDateEvent(string yes, string event, map<string, vector<string>>& Info){
-    bool find = false;
-        for (const auto& date : Info) {
-            if(date.first == yes){
-                for(const auto& eventTemp : date.second ){
-                    if (eventTemp == event ){
-                        find = true;
-                        break;
-                    }
-                } if(find == true){
-                    break;
-                    }
-            } 
-        }if(find == false){
-          Info[yes].push_back(event);
-        }
+void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info){
+  Info[yes].insert(event);
 }
 
 
 
-void DelDateEvent(string yes, string event, map<string, vector<string>>& Info){
-    int find = 1;
-    for (const auto& date : Info) {
-        if (date.first == yes){
-            for(const auto& eventTemp : date.second ){
-                if (eventTemp == event ){
-                    //date.second.erase(eventTemp);
-                    cout << "Deleted successfully" << endl;
-                    find = 2;
-                }
-            }
-            if (find == 1){
-                cout << "Event not found" << endl;
-            }
+void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){
+  auto it = Info.find(yes);
+    if (it != Info.end()) {
+        it->second.erase(event);
+        if (it->second.empty()) {
+            Info.erase(it);
+            cout << "Deleted successfully" << "\n";
         }
+    }else{
+      cout << "Event not found" << "\n";
+  }
+}
+
+void DelDate(string &yes, map<string, set<string>>& Info){
+  auto it = Info.find(yes);
+    if (it != Info.end()) {
+        int n = it->second.size();
+        Info.erase(it);
+        cout << "Deleted " << n << " events" << "\n";
+    } else {
+        cout << "Date not found" << "\n";
     }
 }
 
-void DelDate(string yes, map<string, vector<string>>& Info){
-    int n = 0;
-    for (const auto& date : Info) {
-        if (date.first == yes){
-                for(const auto& eventTemp : date.second ){
-                    n += 1;
-                }
-            Info.erase(yes);
-            cout << "Deleted " << n << " events" << endl;
-        }
-    }
-}
-
-void Print(string yes, map<string, vector<string>>& Info) {
+void Print(string &yes, map<string, set<string>>& Info) {
     if(yes[0] != '-') {
         for (const auto& BD : Info) {
             string date = BD.first;
@@ -244,12 +224,13 @@ void Print(string yes, map<string, vector<string>>& Info) {
     }
 }
 
-void FindDate(string yes,map<string, vector<string>>& Info){
-    for (const auto& date : Info) {
-        if (date.first == yes){
-            for(const auto& eventTemp : date.second ){
-                cout << eventTemp << endl;
-            }
+void FindDate(string &yes,map<string, set<string>>& Info){
+  auto it = Info.find(yes);
+  if(it != Info.end()){
+    for (const auto& eventTemp : it->second) {
+            cout << eventTemp << "\n";
         }
+    } else {
+        cout << "No events found for the date: " << yes << "\n";
     }
 }
