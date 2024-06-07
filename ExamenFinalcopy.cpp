@@ -34,19 +34,22 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
-          ValidacionNum()
-          if(fecha[1] > 0 && fecha[1] < 13){
-            if(fecha[2] > 0 && fecha[2] < 32){
+          if(ValidacionNum(fecha[1]) && ValidacionNum(fecha[2])){
+            if(fecha[1] > 0 && fecha[1] < 13){
+              if(fecha[2] > 0 && fecha[2] < 32){
+                AddDateEvent(prt2, prt3, Info);
+              }else{
+                cout << "\nDay value is invalid: " << fecha[2];
+                break;
+              }
             }else{
-              cout << "\nDay value is invalid: " << fecha[2];
+              cout << "\nMonth value is invalid: " << fecha[1];
               break;
             }
           }else{
-            cout << "\nMonth value is invalid: " << fecha[1];
-            break;
+            cout << "\n" << "Wrong date format: " << prt2 << "\n";
           }
-          AddDateEvent(prt2, prt3, Info);
-        }
+        }      
       }else if(prt1 == "Del"){
         if(iss >> prt2){
           if(iss >> prt3){
@@ -158,10 +161,10 @@ void ClassNum(string yes){
 
 bool ValidacionNum(int n){
   string yes = to_string(n);
-  if(yes.size() != 2){
-    return false;
+  if(yes.size() <= 2 || n == 0){
+    return true;
   }
-  return true;
+  return false;
 }
 
 void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info){
@@ -229,7 +232,7 @@ void Print(string &yes, map<string, set<string>>& Info) {
                 day = '0' + day;
             } 
 
-            cout << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
+            cout << "\n" << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
             //cout << year << "-" << month << "-" << day << " " << "\n"; //add new line para separar fecha / eventos
             for (const auto& event : BD.second) {
                 cout << event << " ";
