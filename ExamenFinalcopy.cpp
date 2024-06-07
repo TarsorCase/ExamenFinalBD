@@ -15,6 +15,7 @@ void DelDate(string &yes, map<string, set<string>>& Info);
 void Print(string &yes,map<string, set<string>>& Info);
 void FindDate(string &yes, map<string, set<string>>& Info);
 void Help();
+bool ValidacionNum(int n);
 
 vector<int> fecha;
 
@@ -33,6 +34,7 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
+          ValidacionNum()
           if(fecha[1] > 0 && fecha[1] < 13){
             if(fecha[2] > 0 && fecha[2] < 32){
             }else{
@@ -152,6 +154,14 @@ void ClassNum(string yes){
       }
     }
   }
+}
+
+bool ValidacionNum(int n){
+  string yes = to_string(n);
+  if(yes.size() != 2){
+    return false;
+  }
+  return true;
 }
 
 void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info){
