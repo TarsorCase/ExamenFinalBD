@@ -162,10 +162,10 @@ void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){ /
   auto it = Info.find(yes);
     if (it != Info.end()) {
         it->second.erase(event);
-        //if (it->second.empty()) {
-        //    Info.erase(it);
-            cout << "Deleted successfully" << "\n";
-        //}
+        cout << "Deleted successfully" << "\n";
+        if (it->second.empty()){
+           Info.erase(it);
+        }
     }else{
       cout << "Event not found" << "\n";
   }
