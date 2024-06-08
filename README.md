@@ -104,13 +104,15 @@ g++ main.cpp utils.cpp events.cpp -o Programm
 ./Programm
 ```
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/HelpCommand.png)
 
-First of all we type help in order to be greated with a manual on how to use the programm. We can find different use cases and also examples of the commands we have avaiable.
+Antes que nada ponemos ``` Help ``` para ser recibidos con un manual el cual detalla cada uso que el programa ofrece denotando el comando a poner en cada ejemplo.
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
-En el caso de cifrado poner un texto por ejmplo: ``` Hola ``` 
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/AddCommand.png)
+
+Por ejemplo decidimos añadir  con el comando ``` Add ``` un evento llamado ``` Tropper ``` el cual se va llevar acabo el ``` 2024-8-6```.
+
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
 
