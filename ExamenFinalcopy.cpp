@@ -81,7 +81,7 @@ int main () {
             FindDate(prt2, Info);
         }
       }else if(prt1 == "Print"){
-            Print(prt1, Info);
+            Print(prt2, Info);
       }else if(prt1 == "Help"){
         Help();
       }else{
@@ -176,9 +176,6 @@ void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){ /
     if (it != Info.end()) {
         it->second.erase(event);
         cout << "Deleted successfully" << "\n";
-        if (it->second.empty()){
-           Info.erase(it);
-        }
     }else{
       cout << "Event not found" << "\n";
   }
@@ -189,7 +186,9 @@ void DelDate(string &yes, map<string, set<string>>& Info){
     if (it != Info.end()) {
         int n = it->second.size();
         Info.erase(it);
-        if(n == 1){
+        if(n == 0){
+          cout << "Deleted " << n << " events" << "\n";
+        }else if(n == 1){
           cout << "Deleted " << n << " event" << "\n";
         }else{
           cout << "Deleted " << n << " events" << "\n";
@@ -233,10 +232,10 @@ void Print(string &yes, map<string, set<string>>& Info) {
             } 
 
             cout << "\n" << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
-            //cout << year << "-" << month << "-" << day << " " << "\n"; //add new line para separar fecha / eventos
             for (const auto& event : BD.second) {
                 cout << event << " ";
             }
+          cout << "\n";
         }
     }
 }

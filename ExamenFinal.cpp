@@ -1,4 +1,5 @@
 #include <cctype>
+#include <set>
 #include <iostream>
 #include <map>
 #include <string>
@@ -8,16 +9,18 @@
 using namespace std;
 
 void ClassNum(string yes);
-void AddDateEvent(string yes, string event, map<string, vector<string>>& Info);
-void DelDateEvent(string yes, string event, map<string, vector<string>>& Info);
-void DelDate(string yes, map<string, vector<string>>& Info);
-void Print(string yes,map<string, vector<string>>& Info);
-void FindDate(string yes, map<string, vector<string>>& Info);
+void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info);
+void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info);
+void DelDate(string &yes, map<string, set<string>>& Info);
+void Print(string &yes,map<string, set<string>>& Info);
+void FindDate(string &yes, map<string, set<string>>& Info);
+void Help();
+bool ValidacionNum(int n);
 
 vector<int> fecha;
 
 int main () {
-  map<string, vector<string>> Info; 
+  map<string, set<string>> Info; 
   string comandos;
   string prt1;
   string prt2;
@@ -31,28 +34,28 @@ int main () {
       if(prt1 == "Add"){
         if(iss >> prt2 >> prt3){
           ClassNum(prt2);
-          //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
-          if(fecha[1] > 0 && fecha[1] < 13){
-            if(fecha[2] > 0 && fecha[2] < 32){
-              //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
+          if(ValidacionNum(fecha[1]) && ValidacionNum(fecha[2])){
+            if(fecha[1] > 0 && fecha[1] < 13){
+              if(fecha[2] > 0 && fecha[2] < 32){
+                AddDateEvent(prt2, prt3, Info);
+              }else{
+                cout << "\nDay value is invalid: " << fecha[2];
+                break;
+              }
             }else{
-              cout << "\nDay value is invalid: " << fecha[2];
+              cout << "\nMonth value is invalid: " << fecha[1];
               break;
             }
           }else{
-            cout << "\nMonth value is invalid: " << fecha[1];
-            break;
+            cout << "\n" << "Wrong date format: " << prt2 << "\n";
           }
-          AddDateEvent(prt2, prt3, Info);
-        }
+        }      
       }else if(prt1 == "Del"){
         if(iss >> prt2){
           if(iss >> prt3){
             ClassNum(prt2);
-            //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
             if(fecha[1] > 0 && fecha[1] < 13){
               if(fecha[2] > 0 && fecha[2] < 32){
-               //cout << fecha[0] << " " << fecha[1] << " " << fecha[2] << "\n";
                DelDateEvent(prt2, prt3, Info); 
               }else{
                 cout << "Day value is invalid: " << fecha[2];
@@ -78,7 +81,12 @@ int main () {
             FindDate(prt2, Info);
         }
       }else if(prt1 == "Print"){
-            Print(prt1, Info);
+            Print(prt2, Info);
+      }else if(prt1 == "Help"){
+        Help();
+      }else{
+        cout << "Unknown command: " << prt1 << "\n";
+        cout << "Type \"Help\" to see commands" << "\n";
       }
     }
   }
@@ -151,58 +159,46 @@ void ClassNum(string yes){
   }
 }
 
-void AddDateEvent(string yes, string event, map<string, vector<string>>& Info){
-    bool find = false;
-        for (const auto& date : Info) {
-            if(date.first == yes){
-                for(const auto& eventTemp : date.second ){
-                    if (eventTemp == event ){
-                        find = true;
-                        break;
-                    }
-                } if(find == true){
-                    break;
-                    }
-            } 
-        }if(find == false){
-          Info[yes].push_back(event);
-        }
+bool ValidacionNum(int n){
+  string yes = to_string(n);
+  if(yes.size() <= 2 || n == 0){
+    return true;
+  }
+  return false;
 }
 
+void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info){
+  Info[yes].insert(event);
+}
 
+void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info){ //modificado
+  auto it = Info.find(yes);
+    if (it != Info.end()) {
+        it->second.erase(event);
+        cout << "Deleted successfully" << "\n";
+    }else{
+      cout << "Event not found" << "\n";
+  }
+}
 
-void DelDateEvent(string yes, string event, map<string, vector<string>>& Info){
-    int find = 1;
-    for (const auto& date : Info) {
-        if (date.first == yes){
-            for(const auto& eventTemp : date.second ){
-                if (eventTemp == event ){
-                    //date.second.erase(eventTemp);
-                    cout << "Deleted successfully" << endl;
-                    find = 2;
-                }
-            }
-            if (find == 1){
-                cout << "Event not found" << endl;
-            }
+void DelDate(string &yes, map<string, set<string>>& Info){
+  auto it = Info.find(yes);
+    if (it != Info.end()) {
+        int n = it->second.size();
+        Info.erase(it);
+        if(n == 0){
+          cout << "Deleted " << n << " events" << "\n";
+        }else if(n == 1){
+          cout << "Deleted " << n << " event" << "\n";
+        }else{
+          cout << "Deleted " << n << " events" << "\n";
         }
+    } else {
+        cout << "Date not found" << "\n";
     }
 }
 
-void DelDate(string yes, map<string, vector<string>>& Info){
-    int n = 0;
-    for (const auto& date : Info) {
-        if (date.first == yes){
-                for(const auto& eventTemp : date.second ){
-                    n += 1;
-                }
-            Info.erase(yes);
-            cout << "Deleted " << n << " events" << endl;
-        }
-    }
-}
-
-void Print(string yes, map<string, vector<string>>& Info) {
+void Print(string &yes, map<string, set<string>>& Info) {
     if(yes[0] != '-') {
         for (const auto& BD : Info) {
             string date = BD.first;
@@ -235,21 +231,38 @@ void Print(string yes, map<string, vector<string>>& Info) {
                 day = '0' + day;
             } 
 
-            cout << year << "-" << month << "-" << day << ":\n";
+            cout << "\n" << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
             for (const auto& event : BD.second) {
-                cout << event << endl;
+                cout << event << " ";
             }
-            cout << endl;
+          cout << "\n";
         }
     }
 }
 
-void FindDate(string yes,map<string, vector<string>>& Info){
-    for (const auto& date : Info) {
-        if (date.first == yes){
-            for(const auto& eventTemp : date.second ){
-                cout << eventTemp << endl;
-            }
+void FindDate(string &yes,map<string, set<string>>& Info){
+  auto it = Info.find(yes);
+  if(it != Info.end()){
+    for (const auto& eventTemp : it->second) {
+            cout << eventTemp << "\n";
         }
+    } else {
+        cout << "No events found for the date: " << yes << "\n";
     }
 }
+
+void Help() {
+    cout << "Usage: \n";
+    cout << "Add <date> <event>: Add an event to the specified date.\n";
+    cout << "Del <date> <event>: Delete the specified event from the date.\n";
+    cout << "Del <date>: Delete all events for the specified date.\n";
+    cout << "Find <date>: Find all events for the specified date.\n";
+    cout << "Print: Print all dates and their associated events.\n";
+    cout << "For <date>, use format YYYY-MM-DD.\n";
+    cout << "Example: Add 2024-06-07 Meeting\n";
+    cout << "         Del 2024-06-07 Meeting\n";
+    cout << "         Del 2024-06-07\n";
+    cout << "         Find 2024-06-07\n";
+    cout << "         Print\n";
+}
+
