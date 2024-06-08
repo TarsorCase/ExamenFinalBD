@@ -12,7 +12,7 @@ void ClassNum(string yes);
 void AddDateEvent(string &yes, string &event, map<string, set<string>>& Info);
 void DelDateEvent(string &yes, string &event, map<string, set<string>>& Info);
 void DelDate(string &yes, map<string, set<string>>& Info);
-void Print(string &yes,map<string, set<string>>& Info);
+void Print(map<string, set<string>>& Info);
 void FindDate(string &yes, map<string, set<string>>& Info);
 void Help();
 bool ValidacionNum(int n);
@@ -81,7 +81,7 @@ int main () {
             FindDate(prt2, Info);
         }
       }else if(prt1 == "Print"){
-            Print(prt2, Info);
+        Print(Info);
       }else if(prt1 == "Help"){
         Help();
       }else{
@@ -198,46 +198,32 @@ void DelDate(string &yes, map<string, set<string>>& Info){
     }
 }
 
-void Print(string &yes, map<string, set<string>>& Info) {
-    if(yes[0] != '-') {
-        for (const auto& BD : Info) {
-            string date = BD.first;
-            string year, month, day;
+void Print(map<string, set<string>>& Info) {
+  for (const auto& BD : Info){
+    string date = BD.first;
+    string year, month, day;
+    ClassNum(date);
+    if(fecha[0] >= 0){
+      year = to_string(fecha[0]);
+      month = to_string(fecha[1]);
+      day = to_string(fecha[2]);
 
-            int dashCount = 0;
-            for (char c : date) {
-                if (c == '-') {
-                    dashCount++;
-                } else {
-                    if (dashCount == 0){
-                        year += c;
-                    } 
-                    else if (dashCount == 1){
-                        month += c;
-                    } 
-                    else if (dashCount == 2){
-                        day += c;
-                    } 
-                }
-            }
-
-            while (year.size() < 4){
-                year = '0' + year;
-            } 
-            while (month.size() < 2){
-                month = '0' + month;
-            } 
-            while (day.size() < 2){
-                day = '0' + day;
-            } 
-
-            cout << "\n" << year << "-" << month << "-" << day << " "; //elimino el "add new line para separar fecha / eventos" ya que los eventos se tienen que mostrar uno alado del otro junto a la fecha.
-            for (const auto& event : BD.second) {
-                cout << event << " ";
-            }
-          cout << "\n";
-        }
+      while (year.size() < 4){
+        year = '0' + year;
+      } 
+      while (month.size() < 2){
+        month = '0' + month;
+      } 
+      while (day.size() < 2){
+        day = '0' + day;
+      }  
+      cout << "\n" << year << "-" << month << "-" << day << " ";
+      for (const auto& event : BD.second) {
+        cout << event << " "; 
+      }
+      cout << "\n";
     }
+  }
 }
 
 void FindDate(string &yes,map<string, set<string>>& Info){
