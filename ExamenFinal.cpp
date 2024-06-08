@@ -40,14 +40,15 @@ int main () {
                 AddDateEvent(prt2, prt3, Info);
               }else{
                 cout << "\nDay value is invalid: " << fecha[2];
-                break;
+                cout << "\nType \"Help\" to see commands" << "\n";
               }
             }else{
               cout << "\nMonth value is invalid: " << fecha[1];
-              break;
+              cout << "\nType \"Help\" to see commands" << "\n";
             }
           }else{
             cout << "\n" << "Wrong date format: " << prt2 << "\n";
+            cout << "\nType \"Help\" to see commands" << "\n";
           }
         }      
       }else if(prt1 == "Del"){
@@ -59,11 +60,11 @@ int main () {
                DelDateEvent(prt2, prt3, Info); 
               }else{
                 cout << "Day value is invalid: " << fecha[2];
-                break;
+                cout << "\nType \"Help\" to see commands" << "\n";
               }
             }else{
               cout << "Month value is invalid: " << fecha[1];
-              break;
+              cout << "\nType \"Help\" to see commands" << "\n";
             }
           }else{
             if(fecha[1] > 0 && fecha[1] < 13){
@@ -71,7 +72,7 @@ int main () {
 
             }else{
               cout << "Month value is invalid: " << fecha[1];
-              break;
+              cout << "\nType \"Help\" to see commands" << "\n";
             }
           }
         }   
@@ -161,7 +162,7 @@ void ClassNum(string yes){
 
 bool ValidacionNum(int n){
   string yes = to_string(n);
-  if(yes.size() <= 2 || n == 0){
+  if(yes.size() <= 2 || (yes[0] == '-' && yes.size() <= 3)){
     return true;
   }
   return false;
