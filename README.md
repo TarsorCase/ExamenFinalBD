@@ -98,12 +98,15 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
-./ExamenFinal
+g++ main.cpp utils.cpp events.cpp -o Programm
 ```
+```
+./Programm
+```
+
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte1.png)
 
-Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ```
- o ``` 2 ``` o ``` 3 ```
+First of all we type help in order to be greated with a manual on how to use the programm. We can find different use cases and also examples of the commands we have avaiable.
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
