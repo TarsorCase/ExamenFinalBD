@@ -126,7 +126,7 @@ Al finalizar de añadir lo eventos que queremos usamos ``` Print ``` para poder 
 Ahora hacemos uso del comando ``` Del ``` para eliminar un evento llamado ``` Tropper ``` el cual se va llevar acabo el ```2024-8-6``` con un enter eliminamos este evento de nuestra base de datos y nos aparece el mensaje ``` Deleted successfully ```.
 
 
-![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DellAll.png)
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DelAll.png)
 
 Si deseamos optimizar este proceso hacemos uso del comando ``` Del ``` y la fecha ```2024-8-6``` ya que con esta combinacion eliminamos todos los eventos de de esta fecha y nos aparece el mensaje ``` Deleted 2 events ``` ya que si hacemos recuerdo quedaaban dos eventos en esa fecha.
 
