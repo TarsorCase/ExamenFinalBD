@@ -111,20 +111,25 @@ Antes que nada ponemos ``` Help ``` para ser recibidos con un manual el cual det
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/AddCommand.png)
 
-Por ejemplo decidimos añadir  con el comando ``` Add ``` un evento llamado ``` Tropper ``` el cual se va llevar acabo el ``` 2024-8-6```.
+Por ejemplo decidimos añadir  con el comando ``` Add ``` un evento llamado ``` Tropper ``` el cual se va llevar acabo el ```2024-8-6``` con un enter añadimos este evento en nuestra base de datos.
+
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/MultipleAdd.png)
+
+Ocupamos ``` Add ``` varias veces para poder guardar varios eventos en la misma fecha ```2024-8-6```.
+
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/Print.png)
+
+Ocupamos ``` Print ``` para poder imprimir en la temrinal todas las fechas con sus eventos correspondientes, en este caso solo se muestra una linea con fecha ```2024-8-6``` ya que loe eventos que previamente ingresamos tienen la misma fecha. Sin embargo de tener dieferentes fechas se mostrarian en orden con sus eventos alado para cada fecha.
+
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DelCommand.png)
+
+Ahora hacemos uso del comando ``` Del ``` para eliminar un evento llamado ``` Tropper ``` el cual se va llevar acabo el ```2024-8-6``` con un enter eliminamos este evento de nuestra base de datos y nos aparece el mensaje ``` Deleted successfully ```.
 
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
+![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DellAll.png)
 
-En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamiento que se des
-ea por lo que ponemos: ``` 4 ``` 
+Ahora hacemos uso del comando ``` Del ``` y la fecha ```2024-8-6``` ya que con esta combinacion eliminamos todos los eventos de de esta fecha y nos aparece el mensaje ``` Deleted 2 events ``` ya que si hacemos recuerdo quedaaban dos eventos en esa fecha.
 
-![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
-
-Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la
- opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad
- de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrec
-e como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 
