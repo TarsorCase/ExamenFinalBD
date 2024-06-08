@@ -106,12 +106,12 @@ g++ main.cpp utils.cpp events.cpp -o Programm
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/HelpCommand.png)
 
-Antes que nada ponemos ``` Help ``` para ser recibidos con un manual el cual detalla cada uso que el programa ofrece denotando el comando a poner en cada ejemplo.
+Antes que nada ponemos ``` Help ``` , para ser recibidos con un manual el cual detalla cada opcion que el programa ofrece, denotando el comando a poner en cada ejemplo.
 
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/AddCommand.png)
 
-Por ejemplo decidimos añadir  con el comando ``` Add ``` un evento llamado ``` Tropper ``` el cual se va llevar acabo el ```2024-8-6``` con un enter añadimos este evento en nuestra base de datos.
+Por ejemplo decidimos añadir con el comando ``` Add ``` un evento llamado ``` Tropper ``` el cual se va llevar acabo el ```2024-8-6``` con un enter añadimos este evento en nuestra base de datos.
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/MultipleAdd.png)
 
@@ -119,7 +119,7 @@ Ocupamos ``` Add ``` varias veces para poder guardar varios eventos en la misma 
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/Print.png)
 
-Ocupamos ``` Print ``` para poder imprimir en la temrinal todas las fechas con sus eventos correspondientes, en este caso solo se muestra una linea con fecha ```2024-8-6``` ya que loe eventos que previamente ingresamos tienen la misma fecha. Sin embargo de tener dieferentes fechas se mostrarian en orden con sus eventos alado para cada fecha.
+Al finalizar de añadir lo eventos que queremos usamos ``` Print ``` para poder imprimir en la temrinal todas las fechas con sus eventos correspondientes, en este caso solo se muestra una linea con fecha ```2024-8-6```, ya que loe eventos que previamente ingresamos tienen la misma fecha. Sin embargo si hubieran tenido diferentes fechas se mostrarian en orden uno abajo de otro con sus eventos alado para cada fecha.
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DelCommand.png)
 
@@ -128,7 +128,7 @@ Ahora hacemos uso del comando ``` Del ``` para eliminar un evento llamado ``` Tr
 
 ![](https://github.com/TarsorCase/ExamenFinalBD/blob/master/Photos/DellAll.png)
 
-Ahora hacemos uso del comando ``` Del ``` y la fecha ```2024-8-6``` ya que con esta combinacion eliminamos todos los eventos de de esta fecha y nos aparece el mensaje ``` Deleted 2 events ``` ya que si hacemos recuerdo quedaaban dos eventos en esa fecha.
+Si deseamos optimizar este proceso hacemos uso del comando ``` Del ``` y la fecha ```2024-8-6``` ya que con esta combinacion eliminamos todos los eventos de de esta fecha y nos aparece el mensaje ``` Deleted 2 events ``` ya que si hacemos recuerdo quedaaban dos eventos en esa fecha.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
