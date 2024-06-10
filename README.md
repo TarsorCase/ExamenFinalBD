@@ -102,7 +102,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Buscar fecha ---> FindDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="400" height="400" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="350" height="350" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -111,7 +111,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Ayuda ---> Help</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="250" height="250" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="250" height="450" style="display: inline-block;">
 </p>
 </div>
 </details>
