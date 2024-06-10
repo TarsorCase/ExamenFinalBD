@@ -58,26 +58,56 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <h3 align="center">➤Funciones</h3>
 <details>
 <summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/AddDateEvent.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 <details>
 <summary>Eliminar evento ---> Del <-fecha-> <-evento-></summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 <details>
 <summary>Eliminar fecha ---> DelDate <-fecha-></summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 <details>
 <summary>Imprimir eventos ---> Print <-fecha-></summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 <details>
 <summary>Buscar fecha ---> FindDate <-fecha-></summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 <details>
 <summary>Ayuda ---> Help</summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="260" height="260" style="display: inline-block;">
+</p>
+</div>
 </details>
 
 
