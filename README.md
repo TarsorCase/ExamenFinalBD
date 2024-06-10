@@ -26,27 +26,25 @@ acenar y acceder a eventos asociados con fechas específicas.
 | Timeseries         | Alta              | Horizontal         | Media          | Media               | Alto                       | A veces (con extensiones) | Simples         |
 
 
-Estas son las tecnologias mas conocidas en el sector de las bases de datos, podemos ver su comparacion en diferentes caracteristicas y com se adecuan a cada caso de uso.
+Estas son las tecnologias mas conocidas en el sector de las bases de datos, podemos ver su comparacion en diferentes caracteristicas y como se adecuan a cada caso de uso.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 <h3 align="center">🔎 Justificación </h3>
 <p align="center">✨ Las bases de datos ✨</p>
 <div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
-  <h4>📚 Almacenamiento de información</h4>
-  <p>Permiten almacenar grandes cantidades de información organizada de manera que se puede acceder, gestionar y actualizar eficientemente.</p>
+  <h4>📚 Requerimiento Especificos</h4>
+  <p>Como el uso que se le piensa dar es especifico y no es cubierto por las bases de datos existentes. La creacion de un nueva forma de base de datos es necesaria, para que cumpla con los requerimientos del usuario. El uso de comandos especificos todos puestos desde terminal y con salidas de tipo stdin y stdout son una clara indicacion de un uso de C o c++ para el lenguaje de programacion a utilizar. Por otro lado al ser operaciones concretas sin niguna necesidad de otras funcionalidades se opto por crear la base de datos desde cero.</p>
 </div>
 <div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
-  <h4>📊 Toma de decisiones</h4>
-  <p>La información organizada en una base de datos puede ser utilizada para análisis y toma de decisiones estratégicas, ayudando a las empresas a comprender mejor sus operaciones, clientes y mercados.</p>
+  <h4>📊 Rendimiento Optimo</h4>
+  <p>Como previamente descrito al ser las funcionalidades concretas el uso de una base de datos customizada mejora el la eficiencia y redimiento al momento de leer y escribir datos ya que no ocupamos herramientas extras o un flujo de trabajo no correspondiente a lo especificado. Esto mejorar en gran medida el apogeo de parte del personal y su uso se clarifica con una interfaz intuitiva en terminal</p>
 </div>
 <div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
-  <h4>⚙️ Eficiencia operacional</h4>
-  <p>Automatizan y simplifican muchos procesos, reduciendo errores humanos y aumentando la eficiencia.</p>
-</div>
-<div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
-  <h4>🏢 Soporte para aplicaciones de negocios</h4>
-  <p>Las bases de datos son la columna vertebral de muchas aplicaciones empresariales como sistemas de planificación de recursos empresariales (ERP) y gestión de relaciones con clientes (CRM).</p>
+  <h4>⚙️ Escalabilidad y Flexibilidad</h4>
+  <p>Al hablar de escalabilidad y teniendo en cuenta que la base de datos fue escrita en su totalidad en C++ se puede asegurar un escalabilidad vertical, ya que se puede optimizar las structuras de datos y los algoritmos para manejar mas datos a la medida que el hardware incrementa. Sin embargo la escalabilidad horizontal es mas compleja ya que requiere la habilidad de distribuir y sicronizar la informacion atravez de multiples nodos. 
+
+Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no preocupamos arduamente en cerciorarnos que se puedan añadir nuevos tipos de datos y cambiar el formato del mismo, para que se adapte de forma rapida a nuevos requerimientos.</p>
 </div>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
