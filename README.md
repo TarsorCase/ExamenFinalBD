@@ -125,7 +125,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Clasificar datos de la fecha ---> ClassNum</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ClassNum.png" width="250" height="500" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ClassNum.png" width="550" height="500" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -134,7 +134,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Validar numeros ---> ValidacionNum</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ValidacionNum.drawio.png" width="250" height="500" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ValidacionNum.drawio.png" width="250" height="300" style="display: inline-block;">
 </p>
 </div>
 </details>
