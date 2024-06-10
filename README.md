@@ -75,7 +75,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Eliminar evento ---> Del <-fecha-> <-evento-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="360" height="360" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="300" height="300" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -84,7 +84,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Eliminar fecha ---> DelDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="530" height="530" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="430" height="430" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -93,7 +93,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Imprimir eventos ---> Print <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="650" height="600" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="550" height="500" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -111,7 +111,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Ayuda ---> Help</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="360" height="460" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="250" height="250" style="display: inline-block;">
 </p>
 </div>
 </details>
