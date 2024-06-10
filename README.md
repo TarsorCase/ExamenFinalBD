@@ -53,6 +53,12 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
 <h3 align="center">🐢 Estructura Repositorio</h3>
 
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Estructura.png" width="460" height="760" style="display: inline-block;">
+</p>
+</div>
+
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 <h3 align="center">➤Funciones</h3>
