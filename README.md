@@ -55,7 +55,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Estructura.png" width="460" height="760" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Estructura.png" width="360" height="560" style="display: inline-block;">
 </p>
 </div>
 
