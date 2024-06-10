@@ -117,7 +117,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <h3 align="center">🌲Diagrama de flujo </h3>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/BD.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/BD.png" width="400" height="400" style="display: inline-block;">
 </p>
 </div>
 Aqui podemos ver la estructura primitiva del programa como mediante sentencias logramos filtrar las entradas
