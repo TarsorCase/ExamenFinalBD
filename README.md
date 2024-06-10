@@ -64,7 +64,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/AddDateEvent.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/AddDateEvent.png" width="150" height="260" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -73,7 +73,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Eliminar evento ---> Del <-fecha-> <-evento-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="460" height="460" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="300" height="300" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -82,7 +82,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Eliminar fecha ---> DelDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="560" height="560" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="430" height="430" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -91,7 +91,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Imprimir eventos ---> Print <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="700" height="700" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="550" height="500" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -100,7 +100,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Buscar fecha ---> FindDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="460" height="460" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="350" height="350" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -109,7 +109,7 @@ Hablando de flexibilidad al momento de crear la base de datos mi equipo y yo no 
 <summary>Ayuda ---> Help</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="460" height="460" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="250" height="500" style="display: inline-block;">
 </p>
 </div>
 </details>
