@@ -26,7 +26,7 @@ acenar y acceder a eventos asociados con fechas específicas.
 | Timeseries         | Alta              | Horizontal         | Media          | Media               | Alto                       | A veces (con extensiones) | Simples         |
 
 
-Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui tenemos sus caracterisitcas y una compracion al respecto.
+Estas son las tecnologias mas conocidas en el sector de las bases de datos, podemos ver su comparacion en diferentes caracteristicas y com se adecuan a cada caso de uso.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
