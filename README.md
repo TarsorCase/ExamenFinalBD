@@ -136,6 +136,9 @@ git clone https://github.com/TarsorCase/ExamenFinalBD.git
 cd ExamenFinalBD/
 ```
 ```
+cd CodigoFuente/
+```
+```
 g++ main.cpp utils.cpp events.cpp -o Programm
 ```
 ```
