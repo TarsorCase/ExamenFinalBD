@@ -61,7 +61,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
-<h3 align="center">➤Funciones</h3>
+<h3 align="center">➤ Funciones para los eventos</h3>
 <details>
 <summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
  <div align="center">
@@ -120,6 +120,30 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+
+<h3 align="center">➤ Funciones de utilidad</h3>
+
+<details>
+<summary>Clasificar datos de la fecha ---> ClassNum</summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ClassNum.png" width="250" height="500" style="display: inline-block;">
+</p>
+</div>
+</details>
+
+<details>
+<summary>Validar numeros ---> ValidacionNum</summary>
+ <div align="center">
+<p align="center">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/ValidacionNum.drawio.png" width="250" height="500" style="display: inline-block;">
+</p>
+</div>
+</details>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
+
+
 <h3 align="center">🌲Diagrama de flujo </h3>
  <div align="center">
 <p align="center">
