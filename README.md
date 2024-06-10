@@ -66,7 +66,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos, pode
 <summary>Agregar evento ---> Add <-fecha-> <-evento-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/AddDateEvent.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/AddDateEvent.png" width="150" height="260" style="display: inline-block;">
 </p>
 </div>
 </details>
