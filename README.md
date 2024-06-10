@@ -31,7 +31,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
 
 <h3 align="center">🔎 Justificación </h3>
-<p align="center">✨ Las bases de datos: El corazón de la eficiencia y la toma de decisiones empresariales ✨</p>
+<p align="center">✨ Las bases de datos ✨</p>
 <div style="padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9; margin: 20px;">
   <h4>📚 Almacenamiento de información</h4>
   <p>Permiten almacenar grandes cantidades de información organizada de manera que se puede acceder, gestionar y actualizar eficientemente.</p>
