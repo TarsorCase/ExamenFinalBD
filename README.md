@@ -69,7 +69,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <summary>Eliminar evento ---> Del <-fecha-> <-evento-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDate.png" width="460" height="460" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -78,7 +78,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <summary>Eliminar fecha ---> DelDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/DelDateEvent.png" width="560" height="560" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -87,7 +87,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <summary>Imprimir eventos ---> Print <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/PrintFuction.png" width="700" height="700" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -96,7 +96,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <summary>Buscar fecha ---> FindDate <-fecha-></summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Find.png" width="460" height="460" style="display: inline-block;">
 </p>
 </div>
 </details>
@@ -105,7 +105,7 @@ Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui 
 <summary>Ayuda ---> Help</summary>
  <div align="center">
 <p align="center">
-   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="260" height="260" style="display: inline-block;">
+   <img title="blackeye-im" src="https://github.com/TarsorCase/ExamenFinalBD/raw/master/Photos/Fuctions/Help.png" width="460" height="460" style="display: inline-block;">
 </p>
 </div>
 </details>
