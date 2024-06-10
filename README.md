@@ -17,13 +17,13 @@ acenar y acceder a eventos asociados con fechas específicas.
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="linea" />
   <h3 align="center">📖 Tabla Base de datos</h3>
   
-| Base de Datos | Tipo          | Sistema de Gestión | Licencia       | Lenguaje de Consulta | Soporte para Transacciones | Escalabilidad           | Modelo de Datos | Soporte para la Nube    |
-|---------------|---------------|--------------------|----------------|---------------------|----------------------------|-------------------------|-----------------|-------------------------|
-| MySQL         | Relacional    | MySQL              | GPL            | SQL                 | Sí                         | Vertical                | Tablas          | AWS, Azure, Google Cloud|
-| PostgreSQL    | Relacional    | PostgreSQL         | PostgreSQL     | SQL                 | Sí                         | Horizontal y Vertical   | Tablas          | AWS, Azure, Google Cloud|
-| MongoDB       | No relacional | MongoDB            | SSPL, Apache   | NoSQL               | Limitado                   | Horizontal              | Documentos      | AWS, Azure, Google Cloud|
-| Cassandra     | No relacional | Apache Cassandra   | Apache         | NoSQL               | No                         | Horizontal              | Clave-valor     | AWS, Azure, Google Cloud|
-| Neo4j         | No relacional | Neo4j              | GPL, Comercial | Cypher              | Sí                         | Horizontal              | Grafo           | AWS, Azure, Google Cloud|
+| Caracteristicas    | Consistencia      | Escalabilidad      | Flexibilidad   | Complejidad         | Rendimiento                | Soporte SQL               | Transacciones   |
+|--------------------|-------------------|--------------------|----------------|---------------------|----------------------------|---------------------------|-----------------|
+| RDBMS              | Alta              | Vertical           | Media          | Alta                | Medio                      | Si                        | Complejas       |
+| NoSQL              | Eventual          | Horizontal         | Alta           | Media               | Alto                       | No (generalmente)         | Simples         |
+| En Memoria         | Alta (en algunos) | Horizontal         | Baja           | Baja                | Muy Alto                   | No                        | Limitadas       |
+| Orientada a Grafos | Alta              | Horizontal         | Media          | Alta                | Alto                       | No                        | Complejas       |
+| Timeseries         | Alta              | Horizontal         | Media          | Media               | Alto                       | A veces (con extensiones) | Simples         |
 
 
 Estas son las tecnologias mas conocidas en el sector de las bases de datos aqui tenemos sus caracterisitcas y una compracion al respecto.
